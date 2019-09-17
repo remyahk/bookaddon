@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BookList</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .success .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px, 0;
+      }
+      .success {
+        background: green;
+      }
+      .error {
+        background: red;
+      }
+      body {
+        background-image: linear-gradient(
+          rgb(143, 142, 132),
+          rgb(255, 255, 255)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        BOOK TITLE
+      </h1>
+      <form class="form-group" id="formbook">
+        <div class="col-lg-5">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" />
+        </div>
+        <div class="col-lg-5">
+          <label for="author">Author</label>
+          <input type="text" class="form-control" id="author" />
+        </div>
+        <div class="col-lg-5">
+          <label for="isdn">ISDN</label>
+          <input type="text" class="form-control" id="isdn" />
+        </div>
+        <div>
+          <button value="Submit" class="btn btn-default m-2 backgound-black">
+            Submit
+          </button>
+        </div>
+      </form>
+      <hr />
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISDN</th>
+            </tr>
+          </thead>
+          <tbody id="booklist"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="appes6.js"></script>
+  </body>
+</html>
